@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B612 — Centro de Formación y Producción Artística</title>
+  <meta name="description" content="B612: formación en canto, danza e interpretación escénica, montajes de teatro musical y producción audiovisual.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="logo">B612</a>
+      <nav>
+        <a href="#formacion">Formación</a>
+        <a href="#producciones">Producciones</a>
+        <a href="#audiovisual">Producción audiovisual</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Formamos artistas. Creamos producciones.</h1>
+        <p>Canto, danza, interpretación escénica, teatro musical y producción audiovisual.</p>
+      </div>
+    </section>
+
+    <section id="formacion" class="section">
+      <div class="container">
+        <h2>Formación</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Canto</h3>
+            <p>Talleres de técnica vocal para todos los niveles.</p>
+          </article>
+          <article class="card">
+            <h3>Danza</h3>
+            <p>Formación en danza aplicada al teatro musical.</p>
+          </article>
+          <article class="card">
+            <h3>Interpretación escénica</h3>
+            <p>Talleres de actuación para escena y cámara.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="producciones" class="section alt">
+      <div class="container">
+        <h2>Producciones</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Frozen, Una Aventura Congelada</h3>
+            <p>Estreno: 15 de noviembre.</p>
+          </article>
+          <article class="card">
+            <h3>Aladdin y la lámpara maravillosa</h3>
+            <p>Fecha de estreno por confirmar.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="audiovisual" class="section">
+      <div class="container">
+        <h2>Producción audiovisual</h2>
+        <p>Producción audiovisual para artistas independientes: videoclips, covers, coreografías y contenido para terceros.</p>
+      </div>
+    </section>
+
+    <section id="contacto" class="section alt">
+      <div class="container">
+        <h2>Contacto</h2>
+        <p>Escríbenos por <a href="https://www.instagram.com/b612.audiovisual" target="_blank" rel="noopener">Instagram</a>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> B612</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
