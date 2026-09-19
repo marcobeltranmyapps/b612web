@@ -8,10 +8,16 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="site-header">
+  <header class="site-header" id="site-header">
     <div class="container header-inner">
       <a href="/" class="logo">B612</a>
-      <nav>
+
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+        <span class="sr-only">Abrir menú</span>
+      </button>
+
+      <nav id="site-nav">
         <a href="#formacion">Formación</a>
         <a href="#producciones">Producciones</a>
         <a href="#audiovisual">Producción audiovisual</a>
@@ -23,24 +29,25 @@
   <main>
     <section class="hero">
       <div class="container">
-        <h1>Formamos artistas. Creamos producciones.</h1>
+        <h1>Formamos artistas.<br>Creamos producciones.</h1>
         <p>Canto, danza, interpretación escénica, teatro musical y producción audiovisual.</p>
+        <a href="#producciones" class="btn">Ver producciones</a>
       </div>
     </section>
 
     <section id="formacion" class="section">
       <div class="container">
-        <h2>Formación</h2>
+        <h2 class="reveal">Formación</h2>
         <div class="cards">
-          <article class="card">
+          <article class="card reveal">
             <h3>Canto</h3>
             <p>Talleres de técnica vocal para todos los niveles.</p>
           </article>
-          <article class="card">
+          <article class="card reveal">
             <h3>Danza</h3>
             <p>Formación en danza aplicada al teatro musical.</p>
           </article>
-          <article class="card">
+          <article class="card reveal">
             <h3>Interpretación escénica</h3>
             <p>Talleres de actuación para escena y cámara.</p>
           </article>
@@ -50,13 +57,13 @@
 
     <section id="producciones" class="section alt">
       <div class="container">
-        <h2>Producciones</h2>
+        <h2 class="reveal">Producciones</h2>
         <div class="cards">
-          <article class="card">
+          <article class="card reveal">
             <h3>Frozen, Una Aventura Congelada</h3>
             <p>Estreno: 15 de noviembre.</p>
           </article>
-          <article class="card">
+          <article class="card reveal">
             <h3>Aladdin y la lámpara maravillosa</h3>
             <p>Fecha de estreno por confirmar.</p>
           </article>
@@ -66,15 +73,17 @@
 
     <section id="audiovisual" class="section">
       <div class="container">
-        <h2>Producción audiovisual</h2>
-        <p>Producción audiovisual para artistas independientes: videoclips, covers, coreografías y contenido para terceros.</p>
+        <h2 class="reveal">Producción audiovisual</h2>
+        <p class="reveal">Producción audiovisual para artistas independientes: videoclips, covers, coreografías y contenido para terceros.</p>
       </div>
     </section>
 
     <section id="contacto" class="section alt">
       <div class="container">
-        <h2>Contacto</h2>
-        <p>Escríbenos por <a href="https://www.instagram.com/b612.audiovisual" target="_blank" rel="noopener">Instagram</a>.</p>
+        <h2 class="reveal">Contacto</h2>
+        <p class="reveal">
+          <a href="https://www.instagram.com/b612.audiovisual" target="_blank" rel="noopener" class="btn btn-outline">Escríbenos por Instagram</a>
+        </p>
       </div>
     </section>
   </main>
@@ -85,8 +94,6 @@
     </div>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <script src="js/main.js"></script>
 </body>
 </html>
