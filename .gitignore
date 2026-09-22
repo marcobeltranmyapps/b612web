@@ -2,3 +2,8 @@ node_modules/
 .DS_Store
 Thumbs.db
 *.log
+
+# Videos y fotos originales sin editar (material de trabajo, no se publica).
+# Las versiones finales ya usadas viven en public/video/ y public/img/ y sí se versionan.
+/video/
+/fotos/

@@ -18,9 +18,9 @@
       </button>
 
       <nav id="site-nav">
-        <a href="#formacion">Formación</a>
-        <a href="#producciones">Producciones</a>
-        <a href="#audiovisual">Producción audiovisual</a>
+        <a href="#formacion">Talleres</a>
+        <a href="#montajes">Montajes</a>
+        <a href="#proyectos">Proyectos</a>
         <a href="#contacto">Contacto</a>
       </nav>
     </div>
@@ -28,69 +28,141 @@
 
   <main>
     <section class="hero">
+      <video class="hero-video" autoplay muted loop playsinline poster="video/hero-poster.jpg">
+        <source src="video/hero.mp4" type="video/mp4">
+      </video>
+      <div class="hero-overlay"></div>
       <div class="container">
-        <h1>Formamos artistas.<br>Creamos producciones.</h1>
+        <span class="eyebrow">B612</span>
+        <h1>Formamos artistas.<br>Creamos <span class="highlight">producciones</span>.</h1>
         <p>Canto, danza, interpretación escénica, teatro musical y producción audiovisual.</p>
-        <a href="#producciones" class="btn">Ver producciones</a>
+        <a href="#montajes" class="btn">Ver montajes</a>
+        <p class="helper">Talleres, montajes y proyectos audiovisuales en un solo lugar.</p>
       </div>
     </section>
 
     <section id="formacion" class="section">
       <div class="container">
-        <h2 class="reveal">Formación</h2>
+        <div class="section-head reveal">
+          <span class="eyebrow">Formación</span>
+          <h2>Talleres</h2>
+          <p>Tu punto de partida para dar tus primeros pasos como artista.</p>
+        </div>
         <div class="cards">
-          <article class="card reveal">
-            <h3>Canto</h3>
+          <article class="card card--media reveal" style="background-image: url('img/talleres/canto.jpeg'); background-position: center 15%;">
             <p>Talleres de técnica vocal para todos los niveles.</p>
+            <a href="https://www.instagram.com/b612.audiovisual" target="_blank" rel="noopener" class="btn btn-outline btn-sm">🎤 Canto</a>
           </article>
-          <article class="card reveal">
-            <h3>Danza</h3>
+          <article class="card card--media reveal" style="background-image: url('img/talleres/danza.jpeg');">
             <p>Formación en danza aplicada al teatro musical.</p>
+            <a href="https://www.instagram.com/b612.audiovisual" target="_blank" rel="noopener" class="btn btn-outline btn-sm">💃 Danza</a>
           </article>
-          <article class="card reveal">
-            <h3>Interpretación escénica</h3>
+          <article class="card card--media reveal" style="background-image: url('img/talleres/interpretacion.jpeg');">
             <p>Talleres de actuación para escena y cámara.</p>
+            <a href="https://www.instagram.com/b612.audiovisual" target="_blank" rel="noopener" class="btn btn-outline btn-sm">🎭 Interpretación</a>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="producciones" class="section alt">
+    <section id="montajes" class="section alt">
       <div class="container">
-        <h2 class="reveal">Producciones</h2>
+        <div class="section-head reveal">
+          <span class="eyebrow">Teatro musical</span>
+          <h2>Montajes</h2>
+          <p>Nuestras producciones propias, de la formación a las funciones.</p>
+        </div>
         <div class="cards">
-          <article class="card reveal">
+          <article class="card card--media card--frozen reveal">
+            <span class="tag tag--yellow">En cartelera</span>
             <h3>Frozen, Una Aventura Congelada</h3>
             <p>Estreno: 15 de noviembre.</p>
+            <a href="https://frozen.b612.org.pe" target="_blank" rel="noopener" class="btn btn-sm">Ver entradas</a>
           </article>
-          <article class="card reveal">
+          <article class="card card--media card--aladdin reveal">
+            <span class="tag tag--pink">Próximamente</span>
             <h3>Aladdin y la lámpara maravillosa</h3>
             <p>Fecha de estreno por confirmar.</p>
+            <a href="https://www.instagram.com/b612.audiovisual" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Más información</a>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="audiovisual" class="section">
+    <section id="proyectos" class="section">
       <div class="container">
-        <h2 class="reveal">Producción audiovisual</h2>
-        <p class="reveal">Producción audiovisual para artistas independientes: videoclips, covers, coreografías y contenido para terceros.</p>
+        <div class="section-head reveal">
+          <span class="eyebrow">Producción audiovisual</span>
+          <h2>Proyectos</h2>
+          <p>Producción audiovisual para artistas independientes: videoclips, covers, coreografías y contenido para terceros.</p>
+        </div>
+        <div class="cards">
+          <article class="card reveal">
+            <span class="tag tag--yellow">🕺 Coreografía</span>
+            <h3>Dancing Queen — ABBA</h3>
+            <p>Video coreografía de teatro musical con más de 290 mil vistas.</p>
+            <a href="https://www.youtube.com/watch?v=PmGkhUNV51g" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Ver video</a>
+          </article>
+          <article class="card reveal">
+            <span class="tag tag--pink">🎬 Cortometraje</span>
+            <h3>A ver si aprendes</h3>
+            <p>Cortometraje propio de producción B612.</p>
+            <a href="https://www.youtube.com/watch?v=NQO3S2MrfnA" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Ver video</a>
+          </article>
+          <article class="card reveal">
+            <span class="tag tag--teal">🎬 Cortometraje</span>
+            <h3>Secuestrados</h3>
+            <p>Making of de la producción del cortometraje.</p>
+            <a href="https://www.youtube.com/watch?v=hM6CzRoiU7g" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Ver video</a>
+          </article>
+          <article class="card reveal">
+            <span class="tag tag--yellow">🎥 Reel</span>
+            <h3>Panther Fight Academy</h3>
+            <p>Reel profesional de producción audiovisual para terceros.</p>
+            <a href="https://www.youtube.com/watch?v=zInQoxi-7F4" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Ver video</a>
+          </article>
+          <article class="card reveal">
+            <span class="tag tag--pink">🧒 Contenido infantil</span>
+            <h3>BimBamBum Canal Oficial</h3>
+            <p>Proyecto propio de B612: música y contenido infantil con elenco de niños.</p>
+            <a href="https://www.youtube.com/@BimBamBumCanalOficial" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Ver canal</a>
+          </article>
+        </div>
       </div>
     </section>
 
     <section id="contacto" class="section alt">
       <div class="container">
-        <h2 class="reveal">Contacto</h2>
-        <p class="reveal">
-          <a href="https://www.instagram.com/b612.audiovisual" target="_blank" rel="noopener" class="btn btn-outline">Escríbenos por Instagram</a>
-        </p>
+        <div class="section-head reveal">
+          <span class="eyebrow">Contacto</span>
+          <h2>Hablemos</h2>
+          <p>Escríbenos por redes para talleres, montajes o proyectos de producción audiovisual.</p>
+        </div>
+        <div class="cards reveal" style="justify-items: center; text-align: center;">
+          <a href="https://www.instagram.com/b612.audiovisual" target="_blank" rel="noopener" class="btn">Instagram</a>
+          <a href="https://www.youtube.com/@b612audiovisual" target="_blank" rel="noopener" class="btn btn-outline">YouTube</a>
+          <a href="https://linktr.ee/b612.audiovisual" target="_blank" rel="noopener" class="btn btn-outline">Más enlaces</a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; <span id="year"></span> B612</p>
+      <div class="footer-top">
+        <div>
+          <a href="/" class="footer-logo">B612</a>
+          <p class="footer-tagline">Centro de formación y producción artística: canto, danza, interpretación escénica, teatro musical y producción audiovisual.</p>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/b612.audiovisual" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.youtube.com/@b612audiovisual" target="_blank" rel="noopener">YouTube</a>
+          <a href="https://linktr.ee/b612.audiovisual" target="_blank" rel="noopener">Más enlaces</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> B612</p>
+      </div>
     </div>
   </footer>
 

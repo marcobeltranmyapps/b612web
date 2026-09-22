@@ -59,9 +59,9 @@ B612 promueve activamente a estudiantes/artistas propios con nombre propio, y ar
 
 > Esto sugiere que el sitio debería tener un espacio para "talento" o "elenco" — perfiles de alumnos destacados que se convierten en caras visibles de la marca. Vale la pena confirmar con el cliente si esta es una estrategia intencional (mostrar caras de alumnos como parte del atractivo de los talleres).
 
-## 5. Alianzas / marcas asociadas y portafolio de producción audiovisual para terceros
+## 5. Proyectos propios adicionales y portafolio de producción audiovisual para terceros
 
-- **Bim Bam Bum Oficial** (`bimbambumoficial`) — co-branding detectado en el "Taller de Contenido Musical BimBamBum" (dirigido a niños de 8–13 años, de la canción al video/TikTok). Por confirmar naturaleza exacta de la alianza (¿marca de contenido infantil, franquicia, evento puntual?).
+- **BimBamBum Canal Oficial** — **confirmado por el usuario: es un proyecto propio de B612**, no una alianza externa (corrige la hipótesis anterior). Canal de música/contenido infantil con elenco de niños. YouTube: [@BimBamBumCanalOficial](https://www.youtube.com/@BimBamBumCanalOficial) (64 suscriptores). Publican música original vía DistroKid (ej. "El baile de los animales", con Bastian Cornejo, Geoffrey Tineo). En Instagram (`bimbambumoficial`) también corrieron el "Taller de Contenido Musical BimBamBum" (niños 8–13 años, de la canción al video/TikTok).
 
 En YouTube aparece evidencia clara de que B612 también produce audiovisual **para terceros** (no solo sus propias producciones), lo cual respalda directamente la línea "producción audiovisual para artistas independientes":
 
@@ -87,6 +87,8 @@ En YouTube aparece evidencia clara de que B612 también produce audiovisual **pa
 - **YouTube**: canal [@b612audiovisual](https://www.youtube.com/@b612audiovisual) — 303 suscriptores, 32 videos. Contenido: videoclips/covers, coreografías, funciones completas grabadas, y trabajos de producción audiovisual para terceros (ver sección 5).
 - **Spotify**: distribuyen música propia/covers como artista
 - **Micrositio de producción**: frozen.b612.org.pe — patrón de landing page dedicada por show grande (entradas, asientos, taller asociado), crédito "B612 Entertainment"
+- **aladdin.b612.org.pe** — subdominio ya creado (CNAME a GitHub Pages, registrado el 04-09-2026), mismo patrón que Frozen. Aún no lo hemos revisado a fondo.
+- **Correo del dominio**: `b612.org.pe` usa Zoho Mail (MX + SPF + DKIM configurados el 15-09-2026) — ya existe infraestructura de correo propio (ej. algo como contacto@b612.org.pe), no dependen solo de Instagram.
 
 ### Observaciones sobre desempeño en redes (con reserva — ver limitación abajo)
 
@@ -105,7 +107,17 @@ En YouTube aparece evidencia clara de que B612 también produce audiovisual **pa
 - Confirmado el trabajo de producción para terceros vía making-ofs y musicales dirigidos por Dennis Montejo (Tierra de Campeones) — ver sección 5.
 - Último video subido hace ~1 mes: **"Dangerous to Dream (Me atreveré a Soñar)"**, versión en español de una canción del musical *Anastasia* — no hay contexto claro todavía de si es contenido suelto o teaser de una futura producción. Vale la pena preguntar directamente.
 
-## 8. Estructura tentativa del sitio (borrador)
+## 8. Estilo visual del sitio (aplicado 2026-09-21)
+
+Se rediseñó `public/` con un estilo inspirado en [bladstudios.com/talleres](https://bladstudios.com/talleres) (otra escuela de artes escénicas): tema 100% oscuro (negro + 2 tonos), tipografía nativa del sistema en peso 900 con tracking negativo en títulos, botones pill, tarjetas con tag de categoría (emoji + color), y un sistema de 5 curvas de easing tipo spring. Colores de marca (amarillo `#F5C518`, rosa `#E6197A`, más un teal `#33E0C0` nuevo) se usan como acentos sobre el fondo negro, no como fondo protagonista.
+
+Secciones actuales: Hero (video pendiente, ver abajo) → Talleres (Canto/Danza/Interpretación) → Montajes (Frozen/Aladdin) → Proyectos (portafolio real: Dancing Queen, Matilda para Tierra de Campeones, Secuestrados, Panther Fight Academy) → Contacto.
+
+**Actualizado 2026-09-21:** las 3 tarjetas de Talleres (Canto, Danza, Interpretación) ya usan fotos reales de fondo (`public/img/talleres/`), a partir de fotos que el usuario copió a `fotos/` (raíz, sin publicar): una foto de estudio de canto, una de ensayo de danza, y un frame del video promocional de Frozen para interpretación.
+
+El hero ya tiene video real, ahora usando los 3 clips que el usuario copió a `video/` (raíz del repo, sin publicar — está en `.gitignore`): ensayo/coreografía en un salón (celular), un número musical de ensamble (edificio con vitrales, uniformes tipo colegio), y un teaser promocional de Frozen (actriz en la Plaza de Armas de Lima frente al cartel real "B612 Entertainment presenta Una Aventura Congelada"). Se recortaron los mejores momentos de cada uno y se unieron con crossfades (`ffmpeg`) en un loop de 23s → `public/video/hero.mp4` (~5MB) + `public/video/hero-poster.jpg`. Las tarjetas de Montajes siguen con gradientes de placeholder (pendiente fotos reales).
+
+## 9. Estructura tentativa del sitio (borrador)
 
 - Inicio
 - Sobre B612 (historia, misión, equipo)
@@ -119,24 +131,25 @@ En YouTube aparece evidencia clara de que B612 también produce audiovisual **pa
 
 > Esta estructura es un punto de partida y debe ajustarse según objetivos reales del sitio (¿vender entradas? ¿captar alumnos para talleres? ¿mostrar portafolio audiovisual? ¿todo junto?).
 
-## 9. Información pendiente de confirmar con el cliente
+## 10. Información pendiente de confirmar con el cliente
 
 - [ ] Nombre legal / historia de la organización, año de fundación
 - [ ] Relación entre "B612 Audiovisual" y "B612 Entertainment" (¿mismo grupo, sub-marca para producciones teatrales?)
 - [ ] Ubicación física (¿sede propia, alquilada, teatro de terceros?)
 - [ ] Objetivo principal del sitio web (venta de entradas, captación de alumnos, portafolio, todo)
 - [ ] Identidad visual existente (logo, colores, tipografías) — ya vimos el isotipo circular amarillo/negro de Instagram, ¿es el definitivo?
-- [ ] Contactos oficiales (teléfono, email, dirección)
+- [ ] Contactos oficiales (teléfono, dirección; el email ya sabemos que corre por Zoho Mail sobre b612.org.pe — falta la dirección exacta a usar en el sitio)
+- [ ] Revisar qué hay hoy en aladdin.b612.org.pe (micrositio ya creado, sin revisar)
 - [ ] Si el sitio nuevo debe **centralizar/reemplazar** los micrositios por producción (como frozen.b612.org.pe) o **coexistir** con ellos
 - [ ] Detalle de talleres: modalidades, edades, precios, horarios
 - [ ] Fecha de estreno de Aladdin y la lámpara maravillosa
 - [ ] Si mostrar "talento/elenco" (alumnos destacados) es una estrategia deliberada a reflejar en el sitio
-- [ ] Naturaleza de la alianza con Bim Bam Bum Oficial
 - [ ] Qué son "65mts" y "Gnarly" (highlights de Instagram sin contexto claro)
 - [ ] Relación con "Tierra de Campeones" / Dennis Montejo (¿cliente recurrente, escuela aliada, mismo espacio?)
 - [ ] Rol exacto de B612 en "Secuestrados" y "La ley del vago" (¿producción completa o solo registro/making-of?)
 - [ ] Si "Dangerous to Dream" (canción de Anastasia) es teaser de una futura producción
 - [ ] Si conviene ofrecer las funciones completas grabadas como contenido/producto en el sitio (archivo, alquiler, etc.)
+- [ ] Fotos reales de Frozen/Aladdin para reemplazar los gradientes placeholder en las tarjetas de Montajes
 
 ## Historial de cambios
 
